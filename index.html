@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Result</title>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <style>
+  #box{
+   display: none;
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <div class="row py-5 justify-content-center">
+   <div class="col-lg-8 col-md-12">
+    <div class="bg-white shadow rounded p-4 border border-success" id="form">
+     <div class="row justify-content-center">
+      <div class="col-12 mb-4">
+       <input id="name" type="text" class="form-control" placeholder="Enter Name" >
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <input id="eng" type="number" class="form-control" placeholder="Enter English Number" >
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <input id="urdu" type="number" class="form-control" placeholder="Enter Urdu Number" >
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <input id="math" type="number" class="form-control" placeholder="Enter Math Number" >
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+       <input id="com" type="number" class="form-control" placeholder="Enter Computer Number" >
+      </div>
+      <div class="col-lg-6 col-md-8">
+       <button class="btn btn-success w-100"  onclick="result()">Check Result</button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <div class="row justify-content-center py-5">
+   <div class="col-lg-8 col-md-12">
+    <div class="p-4 rounded border border-success shadow " id="box">
+     <h1 class="text-success">Your Name : <span class="text-info" id="namep">Shahzad</span></h1>
+     <table class="table">
+      <thead>
+       <tr>
+        <th>Subject</th>
+        <th>Total</th>
+        <th>Obtain</th>
+        <th>Percentage</th>
+        <th>Grade</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>English</td>
+        <td>150</td>
+        <td id="Reng">20</td>
+        <td id="engP">20%</td>
+        <td id="engG"></td>
+       </tr>
+       <tr>
+        <td>Urdu</td>
+        <td>150</td>
+        <td id="Rurdu">20</td>
+        <td id="urduP">20%</td>
+        <td id="urduG"></td>
+       </tr>
+       <tr>
+        <td>Math</td>
+        <td>150</td>
+        <td id="Rmath">20</td>
+        <td id="mathP">20%</td>
+        <td id="mathG"></td>
+       </tr>
+       <tr>
+        <td>Computer</td>
+        <td>150</td>
+        <td id="Rcom">20</td>
+        <td id="comP">20%</td>
+        <td id="comG"></td>
+       </tr>
+      </tbody>
+      <tfoot>
+       <tr>
+        <td>-</td>
+        <td>600</td>
+        <td id="totalNumber">320</td>
+        <td id="totalP">50%</td>
+        <td id="TotalG"></td>
+       </tr>
+      </tfoot>
+     </table>
+     <a href="index.html" class="btn btn-success">Check again</a>
+    </div>
+   </div>
+  </div>
+ </div>
+<script src="result.js"></script>
+</body>
+</html>
